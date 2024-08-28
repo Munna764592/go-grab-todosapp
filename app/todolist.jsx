@@ -23,31 +23,6 @@ const TodoListScreen = () => {
   const [tasks, setTasks] = useState([]);
   const router = useRouter();
 
-  // useEffect(() => {
-  //   const deleteTasksTable = async () => {
-  //     try {
-  //       // Open the database connection
-  //       const db = await SQLite.openDatabaseAsync("CategoryDatabase.db");
-
-  //       // Execute SQL command to drop the tasks table
-  //       await db.execAsync(
-  //         "DROP TABLE IF EXISTS tasks;",
-  //         [],
-  //         () => console.log("Tasks table deleted successfully."),
-  //         (error) => {
-  //           console.error("Error deleting tasks table:", error);
-  //           return false; // Return false to indicate failure
-  //         }
-  //       );
-  //     } catch (error) {
-  //       console.error("Error opening database:", error);
-  //     }
-  //   };
-
-  //   // Call the function to delete the tasks table
-  //   deleteTasksTable();
-  // }, []);
-
   const fetchTasks = async () => {
     try {
       const db = await SQLite.openDatabaseAsync("CategoryDatabase.db");
@@ -129,6 +104,7 @@ const TodoListScreen = () => {
           handleLongPress(item.id);
         }
       }}>
+      <View>
       <TouchableOpacity
         style={styles.itemContainer}
         onPress={() =>
@@ -143,9 +119,8 @@ const TodoListScreen = () => {
             thumbColor={item.completed === 1 ? "#FF5722" : "#f4f3f4"}
           />
         </View>
-
-        {/* <Text style={styles.itemText2}>{item.description}</Text> */}
       </TouchableOpacity>
+     </View>
     </LongPressGestureHandler>
   );
 
