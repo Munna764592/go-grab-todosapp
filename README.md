@@ -13,6 +13,17 @@
    ```bash
     npx expo start
    ```
+TODO App
+Welcome to the TODO App! This application provides a comprehensive task management system with the following features:
+
+Features
+Add Category: Click the plus button to create a new category for organizing your tasks.
+Delete Tasks and Categories: Long press on a task or category to delete it.
+Create Task: Use the "Create Task" button to add new tasks to your selected category.
+Task Status: Toggle between completed and pending statuses for each task using the switch button.
+Update Task and Category: Navigate to the update page to modify the details of a task or category.
+Detail View: Access the detail view page to see more information about a specific task.
+
 <img src="https://github.com/user-attachments/assets/284b08c8-5fd8-4da2-ba08-748589c71301" alt="My Project Logo" width="200"/>
 <img src="https://github.com/user-attachments/assets/0b8f6dbd-36ce-4336-9f93-f585a4b6a5b5" alt="My Project Logo" width="200"/>
 <img src="https://github.com/user-attachments/assets/b290743e-526e-47d7-a711-faf596f5d4e9" alt="My Project Logo" width="200"/>
